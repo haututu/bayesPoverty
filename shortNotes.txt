@@ -1,0 +1,9 @@
+Report can be found here:
+https://www.msd.govt.nz/documents/about-msd-and-our-work/publications-resources/monitoring/household-income-report/2017/2017-incomes-report-wed-19-july-2017.pdf
+
+Page 117 has a table on historic measures. Seems to be a break in the time series though.
+Page 122 has the same table but for children (both AHC).
+
+Pages 128 thorugh 135ish have breakdowns that could be helpful.
+
+Page 74 has a small amount of data.

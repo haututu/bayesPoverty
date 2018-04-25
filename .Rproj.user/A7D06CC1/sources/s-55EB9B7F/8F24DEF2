@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1524629858761.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1429245450",
+    "id" : "8F24DEF2",
+    "lastKnownWriteTime" : 1524651442,
+    "last_content_update" : 1524651442223,
+    "path" : "~/projects/bayesPoverty/setup.R",
+    "project_path" : "setup.R",
+    "properties" : {
+        "cursorPosition" : "48,63",
+        "scrollLine" : "21",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

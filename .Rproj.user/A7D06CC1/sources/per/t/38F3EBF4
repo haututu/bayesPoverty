@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1524728222232.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "434918235",
+    "id" : "38F3EBF4",
+    "lastKnownWriteTime" : 1524863202,
+    "last_content_update" : 1524863202763,
+    "path" : "~/projects/bayesPoverty/ahcBasic.R",
+    "project_path" : "ahcBasic.R",
+    "properties" : {
+        "cursorPosition" : "31,33",
+        "scrollLine" : "1",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

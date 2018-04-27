@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1524861716485.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "583843364",
+    "id" : "DEE8E78",
+    "lastKnownWriteTime" : 1524862844,
+    "last_content_update" : 1524862844416,
+    "path" : "~/projects/bayesPoverty/compareModels.R",
+    "project_path" : "compareModels.R",
+    "properties" : {
+        "cursorPosition" : "27,45",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

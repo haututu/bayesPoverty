@@ -7,3 +7,13 @@ Page 122 has the same table but for children (both AHC).
 Pages 128 thorugh 135ish have breakdowns that could be helpful.
 
 Page 74 has a small amount of data.
+
+Response rates in HES;
+15/16 was 5000 hshd and 78.1% reponse rate
+http://archive.stats.govt.nz/browse_for_stats/people_and_communities/Households/HouseholdExpenditureStatistics_HOTPYeJun16/Data%20Quality.aspx#rrate
+
+14/15 was 8000 hshd and 77.9% response rate
+http://archive.stats.govt.nz/browse_for_stats/people_and_communities/Households/HouseholdNetWorthStatistics_HOTPYeJun15/Data%20Quality.aspx#response
+
+Average household size is 2.7;
+http://archive.stats.govt.nz/Census/2013-census/profile-and-summary-reports/qstats-families-households/households.aspx

@@ -6,18 +6,21 @@ dat <- readRDS("data/povData.RDS") %>%
   filter(year >= 2008)
 
 y <- xtabs(y ~ year + age, data=filter(dat, age != "total")) %>%
-  Counts(dimtypes = c(year = "time", age = "state"), dimscales = c(year = "Intervals"))
+  Counts(dimtypes = c(year = "time", age = "state"), dimscales = c(year = "Points"))
 
 exposure <- xtabs(exposure ~ year + age, data=filter(dat, age != "total")) %>%
-  Counts(dimtypes = c(year = "time", age = "state"), dimscales = c(year = "Intervals"))
+  Counts(dimtypes = c(year = "time", age = "state"), dimscales = c(year = "Points"))
 
 #Prepare covariates
 covs <- read.csv("data/covariates.csv") %>%
   filter(year >= 2008)
 
+covs <- left_join(mutate(dat, year=as.integer(year)), read.csv("data/covariates.csv"), by="year") %>%
+  mutate_all(funs(ifelse(is.na(.), 0, .)))
+
 covariates.reg <- Covariates(mean ~ rent * income + highDep, data=covs)
 
-prior.year <- Exch(covariates = covariates.reg)
+prior.year <- DLM(covariates = covariates.reg)
 
 #Set up basic model
 model <- Model(y ~ Binomial(mean ~ year * age),
@@ -41,8 +44,8 @@ fetchSummary(filename = filename)
 
 age.probs <- fetch(filename = filename,
                where = c("model", "likelihood", "prob")) %>%
-  collapseDimension(dimension = "age", weights = exposure) #%>%
-  #collapseIterations(probs = c(0.5))
+  collapseDimension(dimension = "age", weights = exposure) %>%
+collapseIterations(probs = c(0.025, 0.5, 0.975))
 
 totalDirect <- filter(dat, age == 'total') %>%
   xtabs(pov ~ year, data=.) %>%
